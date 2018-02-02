@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        .button1
+        {	background-color: black;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            padding: 0px 15px;
+            text-align: center;
+            text-decoration: none;
+            font-size :32px;
+            margin: 5px;
+            cursor: pointer;
+            display: inline-block;
+            transition: all 0.5s;
+        }
+
+        .button1:hover
+        {	background-color: white;
+            color: white;
+            border-radius: 50%;
+            box-shadow: grey;
+        }
+        .button2
+        {	background-color: purple;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            padding: 5px 30px;
+            text-align: center;
+            text-decoration: none;
+            font-size :32px;
+            margin: 5px;
+            cursor: pointer;
+            display: inline-block;
+            transition: all 0.5s;
+        }
+
+        .button2:hover
+        {	background-color: white;
+            color: white;
+            border-radius: 50%;
+            box-shadow: grey;
+        }
+        input[type=text], select {
+            width: 10%;
+            padding: 12px 20px;
+            margin: 2px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=email], select
+        {   width: 20%;
+            padding: 12px 20px;
+            margin: 2px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=password], select
+        {   width: 20%;
+            padding: 12px 20px;
+            margin: 2px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        body {background-color: powderblue;}
+        h1  {font-size:100px;
+             font-style: italic;
+        }
+        form{
+            font-size:30px;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Course Registration</title>
+</head>
+<script src="myscript.js"></script>
+<center>
+<h1><center>Course Registration</center></h1>
+<center></center>
+<form id="demo">
+    FIRST NAME:
+    <input type="text" name="firstname"><br><br>
+
+    LAST NAME:
+    <input type="text" name="lastname"><br><br>
+
+    UNIVERSITY ID:
+    <input type="text" name="UMKC ID"><br><br>
+
+
+        <select id="deg">
+            <option value="null"><i>DEGREE TO BE ENROLLED</i></option>
+            <option value="Masters">Masters</option>
+            <option value="Bachelors">Bachelors</option>
+        </select>
+        <select id="sem">
+            <option value="null"><i>SEMESTER YOU WANT TO CHOOSE</i></option>
+            <option value="FALL 2018">Fall 2018</option>
+            <option value="Spring 2018">Spring 2018</option>
+        </select>
+        <select id="car">
+            <option value="null"><i>FIELD OF INTEREST</i></option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+        </select>
+        <br>
+        <br>
+
+    </form>
+
+
+        <button value="submit" class="button1" id="btn_click" onclick="onSubmit()">SUBMIT</button>
+</form>
+</center>
+</body>
+</html>
