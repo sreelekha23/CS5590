@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo in Angular.js</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,500' rel='stylesheet'
+          type='text/css'>
+    <script src="https://use.fontawesome.com/21be5f2318.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+    <script src="todo.js"></script>
+    <style>
+        body{
+            background-image: url("https://thumbs.dreamstime.com/b/vintage-background-573809.jpg");
+        }
+    </style>
+</head>
+
+<body ng-app="myApp" ng-controller="todoCtrl">
+
+<h2>My Todo List</h2>
+
+<form ng-submit="todoAdd()">
+    <input type="text" ng-model="todoInput" size="50" placeholder="Add New">
+    <input type="submit" value="Add New">
+</form>
+
+<br>
+
+<div ng-repeat="x in todoList">
+    <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span>
+</div>
+
+<p><button ng-click="remove()">Remove marked</button></p>
+
+</body>
+</html>
