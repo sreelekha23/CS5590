@@ -1,0 +1,32 @@
+<html ng-app="ticTacToeApp">
+<head>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="asst2.js"></script>
+  <script scr="ass.css"></script>
+</head>
+
+<body ng-controller="ticTacToeCtrl as vm">
+<h1>Tic Tac Toe</h1>
+<div class="container">
+  <div class="well">
+    <div ng-repeat="row in vm.board">
+      <button class="btn-lg"
+              ng-repeat="cell in row"
+              ng-disabled="vm.isTaken(cell);"
+              ng-class="cell.value"
+              ng-click="vm.move(cell);">{{ cell.value }}
+      </button>
+    </div>
+    <br>
+    <p>
+      <span ng-hide="vm.winner || vm.cat">Current Player: {{ vm.currentPlayer }}</span>
+      <span ng-show="vm.winner">Player {{ vm.currentPlayer }} won!</span>
+      <span ng-show="vm.cat">Cat</span><br>
+      Player o won
+    </p>
+  </div>
+</div>
+</body>
+</html>

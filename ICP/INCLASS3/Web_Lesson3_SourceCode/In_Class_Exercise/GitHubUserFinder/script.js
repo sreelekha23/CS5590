@@ -8,7 +8,6 @@ function getGithubInfo(user) {
 
 
 
-
 }
 
 function showUser(user) {
