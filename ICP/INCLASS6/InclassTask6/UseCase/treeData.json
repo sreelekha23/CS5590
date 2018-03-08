@@ -1,0 +1,90 @@
+{
+  "name": "United States",
+  "children": [
+    {
+      "name": "University of Missouri System",
+      "children": [
+        {
+          "name": "UMKC",
+          "size": 3938
+        },
+        {
+          "name": "MUST",
+          "size": 3812
+        },
+        {
+          "name": "UMSL",
+          "size": 6714
+        },
+        {
+          "name": "UM",
+          "size": 743
+        }
+      ]
+    },
+        {
+          "name": "Princeton University",
+          "children": [
+            {
+              "name": "Branch1",
+              "size": 3534
+            },
+            {
+              "name": "Branch2",
+              "size": 5731
+            },
+            {
+              "name": "Branch3",
+              "size": 7840
+            },
+            {
+              "name": "Branch4",
+              "size": 5914
+            }
+          ]
+        },
+        {
+          "name": "Yale University",
+          "children": [
+            {
+              "name": "Branch1",
+              "size": 7074
+            }
+          ]
+        },
+    {
+      "name": "University of chicago",
+      "children": [
+        {
+          "name": "Branch1",
+          "size": 17010
+        },
+        {
+          "name": "Branch2",
+          "size": 5842
+        },
+        {
+          "name": "Branch3",
+          "size": 6064
+        },
+        {
+          "name": "Branch4",
+          "size": 7064
+        }
+      ]
+    },
+    {
+      "name": "Harvard University",
+      "children": [
+        {
+          "name": "Branch1",
+          "size": 1759
+        },
+        {
+          "name": "Branch2",
+          "size": 2165
+        }
+      ]
+    }
+  ]
+}
