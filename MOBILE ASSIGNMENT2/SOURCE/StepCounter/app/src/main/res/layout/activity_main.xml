@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/myimage"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.android.karthik.stepcounter.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:textSize="120px"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Pedometer" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Pedometer" />
+
+</LinearLayout>
